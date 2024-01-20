@@ -11,7 +11,7 @@ from pyrogram.types import Message
 from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
 
-from AloneXMusic import app
+from AnonXMusic import app
 
 
 def get_file_extension_from_url(url):
@@ -105,7 +105,7 @@ async def ytmusic(client, message: Message):
             os.remove(files)
 
 
-__mod_name__ = "Vɪᴅᴇᴏ"
+__mod_name__ = "◈ 𝐕ɪᴅᴇᴏ ◈"
 __help__ = """ 
 /video to download video song
 /vsong to download video song """
