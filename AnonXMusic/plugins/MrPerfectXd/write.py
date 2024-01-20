@@ -1,6 +1,6 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from config import  BOT_USERNAME
+from config import  adminlist
 from AnonXMusic import app as app
 import requests
 
