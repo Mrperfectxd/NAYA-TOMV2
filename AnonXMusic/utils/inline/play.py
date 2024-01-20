@@ -72,7 +72,7 @@ def stream_markup_timer(_, chat_id, played, dur):
 
                 text="ɢʀᴏᴜᴘ 💌",
 
-                url=f"https://t.me/TitanXSupport",
+                url=f"https://t.me/Musical_Beatsz",
 
             ),
         ],
@@ -102,7 +102,7 @@ def stream_markup(_, chat_id):
 
                 text="ɢʀᴏᴜᴘ 💌",
 
-                url=f"https://t.me/TitanXSupport",
+                url=f"https://t.me/Musical_Beatsz",
 
             ),
         ],
