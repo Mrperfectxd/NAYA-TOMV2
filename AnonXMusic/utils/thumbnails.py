@@ -96,16 +96,15 @@ async def get_thumb(videoid):
                     await f.write(await resp.read())
                     await f.close()
 
-        youtube = Image.open(f"cache/thumb{videoid}.png")
-        image1 = changeImageSize(1280, 720, youtube)
-        image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(10))
-        enhancer = ImageEnhance.Brightness(background)
-        background = enhancer.enhance(0.5)
-        draw = ImageDraw.Draw(background)
-        arial = ImageFont.truetype("AnonXMusic/assets/font2.ttf", 30)
-        font = ImageFont.truetype("AnonXMusic/assets/font.ttf", 30)
-
+    youtube = Image.open(f"cache/thumb{videoid}.png")
+    image1 = changeImageSize(1280, 720, youtube)
+    image2 = image1.convert("RGBA")
+    background = image2.filter(filter=ImageFilter.BoxBlur(10))
+    enhancer = ImageEnhance.Brightness(background)
+    background = enhancer.enhance(0.5)
+    draw = ImageDraw.Draw(background)
+    arial = ImageFont.truetype("AnonXMusic/assets/font2.ttf", 30)
+    font = ImageFont.truetype("AnonXMusic/assets/font.ttf", 30)
 
 
     circle_thumbnail = crop_center_circle(youtube, 400, 20)
@@ -149,12 +148,12 @@ async def get_thumb(videoid):
     play_icons = play_icons.resize((580, 62))
     background.paste(play_icons, (text_x_position, 450), play_icons)
 
-        try:
-            os.remove(f"cache/thumb{videoid}.png")
-        except:
-            pass
-        background.save(f"cache/{videoid}.png")
-        return f"cache/{videoid}.png"
+     try:
+         os.remove(f"cache/thumb{videoid}.png")
+     except:
+         pass
+     background.save(f"cache/{videoid}.png")
+    return f"cache/{videoid}.png"
     except Exception as e:
-        print(e)
-        return YOUTUBE_IMG_URL
+    print(e)
+     return YOUTUBE_IMG_URL
