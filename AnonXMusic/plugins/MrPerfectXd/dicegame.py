@@ -1,7 +1,7 @@
 from pyrogram import Client, enums, filters
 #from config import *
 import asyncio
-from AloneXMusic import app as app
+from AnonXMusic import app as app
 
 from pyrogram.handlers import MessageHandler
 
@@ -48,4 +48,4 @@ __help__ = """
 /jackpot - Spin slot machine 🎰
  """
 
-__mod_name__ = "Dɪᴄᴇ"
+__mod_name__ = "◈  𝐃ɪᴄᴇ ◈"
