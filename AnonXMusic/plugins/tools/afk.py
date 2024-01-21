@@ -1,5 +1,5 @@
 import time, re
-from config import BOT_USERNAME
+from config import adminlist
 from pyrogram.enums import MessageEntityType
 from pyrogram import filters
 from pyrogram.types import Message
