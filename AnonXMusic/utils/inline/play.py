@@ -1,5 +1,5 @@
 import math
-from config import SUPPORT_CHAT, OWNER_USERNAME
+from config import adminlist 
 from pyrogram.types import InlineKeyboardButton
 from AnonXMusic import app
 from AnonXMusic.utils.formatters import time_to_seconds
