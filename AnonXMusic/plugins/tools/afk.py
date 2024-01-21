@@ -3,13 +3,13 @@ from config import adminlist
 from pyrogram.enums import MessageEntityType
 from pyrogram import filters
 from pyrogram.types import Message
-from AloneXMusic import app
-from AloneXMusic.mongo.readable_time import get_readable_time
-from AloneXMusic.mongo.afkdb import add_afk, is_afk, remove_afk
+from AnonXMusic import app
+from AnonXMusic.mongo.readable_time import get_readable_time
+from AnonXMusic.mongo.afkdb import add_afk, is_afk, remove_afk
 
 
 
-@app.on_message(filters.command(["afk", "brb"], prefixes=["/", "!"]))
+@app.on_message(filters.command(["afk", "byee", "brb"], prefixes=["/", "!"]))
 async def active_afk(_, message: Message):
     if message.sender_chat:
         return
